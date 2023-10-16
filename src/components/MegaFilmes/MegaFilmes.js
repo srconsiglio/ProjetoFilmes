@@ -1,34 +1,27 @@
-import Harry from '../../components/images/kill bill.png'
+import "./megafilmes.css";
 
+function MegaFilmes({ titulo, nomeTitulo}) {
+  return (
+    <>
+     <h1 className="nomeTitulo">{nomeTitulo}</h1>
+    <div className="list">
 
+  
+        
+        {titulo.map((t) => (
 
-function MegaFilmes({nome, imagem, ano}){
-    return(
-        <>
-        <h1>Filmes</h1>
-        <div className='div-exibe'>
+          <div>
+            <img src={t.imagem}></img>
             
-
-
-
-
-
-
-
-
-
-
-
-
-            <img className='exibe.img' src={imagem} alt={nome} year={ano}/>
-            <h1> {nome}</h1>
-            <p> {ano}</p>
-        </div>    
-        </>
-    )
-
+            
+            
+            <h4>{t.nome}</h4>
+            <p>{t.ano}</p>
+          </div>
+        ))}
+        </div>
+    </>
+  );
 }
-
-
 
 export default MegaFilmes;

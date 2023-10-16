@@ -1,0 +1,28 @@
+.list{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+img{
+    width: 280px;
+    height: 420px;
+    margin-bottom: 20px;
+}
+
+img:hover{
+    scale: 1.1;
+}
+
+.nomeTitulo{
+    padding: 3px;
+    margin-left: 50px;
+}
+
+.destaque{
+    padding: 10px;
+    
+}
